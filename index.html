@@ -275,44 +275,46 @@ td{padding:4px 7px;border-bottom:1px solid #f1f5f9;color:var(--sub);}
     </div>
 
     <!-- 1. 22~25년 추세 -->
-    <div class="report-section open" onclick="toggleReportSection(event,this)">
+    <div class="report-section" onclick="toggleReportSection(event,this)">
       <div class="report-head">
         <div class="report-num">1</div>
         <div class="report-head-text">
-          <div class="report-headline">2022 → 2025: 상위 4개사 월평균 매출 <b class="pos"><span class="pos">+31.4%</span></b>·영업이익 <b class="pos"><span class="pos">+65.3%</span></b>, 나머지 24개사도 매출 <b><span class="neg">-10.8%</span></b>·영업이익 <b><span class="neg">-53.9%</span></b></div>
-          <div class="report-subhead">탭을 클릭하면 그룹·회사별 상세를 펼칩니다</div>
+          <div class="report-headline">2022 → 2025: 상위 4개사는 매출 <b class="pos"><span class="pos">+31.4%</span></b>·영업이익 <b class="pos"><span class="pos">+65.3%</span></b> <b>증가</b>한 반면, 나머지 24개사는 매출 <b class="neg"><span class="neg">-10.8%</span></b>·영업이익 <b class="neg"><span class="neg">-53.9%</span></b> <b>감소</b> — <b class="neg">양극화 심화</b></div>
         </div>
         <div class="report-arrow">▼</div>
       </div>
       <div class="report-body" onclick="event.stopPropagation();">
         <div class="report-evidence">
           <div class="ev-card"><div class="ev-card-label">상위 4 · 월평균 매출</div><div class="ev-card-value">8,364억 → 1조 990억 <span class="pos">+31.4%</span></div><div class="ev-card-sub">4년간 누적 증감</div></div>
-          <div class="ev-card"><div class="ev-card-label">상위 4 · 월평균 영업이익</div><div class="ev-card-value">1,371억 → 2,266억 <span class="pos">+65.3%</span></div><div class="ev-card-sub"></div></div>
+          <div class="ev-card"><div class="ev-card-label">상위 4 · 월평균 영업이익</div><div class="ev-card-value">1,371억 → 2,266억 <span class="pos">+65.3%</span></div><div class="ev-card-sub">영업이익률 16.4% → 20.6% <span class="pos">+4.2%p</span></div></div>
           <div class="ev-card"><div class="ev-card-label">나머지 24 · 월평균 매출</div><div class="ev-card-value">6,780억 → 6,050억 <span class="neg">-10.8%</span></div><div class="ev-card-sub"></div></div>
-          <div class="ev-card"><div class="ev-card-label">나머지 24 · 월평균 영업이익</div><div class="ev-card-value">921억 → 424억 <span class="neg">-53.9%</span></div><div class="ev-card-sub"></div></div>
+          <div class="ev-card"><div class="ev-card-label">나머지 24 · 월평균 영업이익</div><div class="ev-card-value">921억 → 424억 <span class="neg">-53.9%</span></div><div class="ev-card-sub">영업이익률 13.6% → 7.0% <span class="neg">-6.6%p</span></div></div>
         </div>
         <div class="report-bullet">
-          <b>4년간(22~25)</b> 상위 4개사는 PC·콘솔 비중 확대와 글로벌 IP 매출 성장으로 월평균 매출 <span class="pos"><span class="pos">+31.4%</span></span>, 영업이익 <span class="pos"><span class="pos">+65.3%</span></span> 성장했고, 나머지 24개사 역시 매출 <span class="neg">-10.8%</span> 성장했지만 영업이익은 <span class="neg">-53.9%</span>로 4개사 대비 상대적 둔화.
+          <b>4년간(22~25)</b> 상위 4개사는 PC·콘솔 비중 확대와 글로벌 IP 매출 성장으로 월평균 매출 <span class="pos"><span class="pos">+31.4%</span></span>, 영업이익 <span class="pos"><span class="pos">+65.3%</span></span> <b>증가</b>한 반면, 나머지 24개사는 매출 <span class="neg-text"><span class="neg">-10.8%</span></span>, 영업이익 <span class="neg-text"><span class="neg">-53.9%</span></span>, 영업이익률 <span class="neg-text">-6.6%p</span>로 <b>감소</b>. 상·하위 간 <b class="neg-text">양극화</b>가 심화됨.
         </div>
         <div class="report-chart-box"><canvas id="report-chart-long" height="100"></canvas></div>
       </div>
     </div>
 
     <!-- 2. 상위 4개사 — 25 → 26.1Q -->
-    <div class="report-section open" onclick="toggleReportSection(event,this)">
+    <div class="report-section" onclick="toggleReportSection(event,this)">
       <div class="report-head">
         <div class="report-num">2</div>
         <div class="report-head-text">
-          <div class="report-headline">상위 4개사 26.1Q: <b class="pos">넥슨</b>·<b class="pos">크래프톤</b>이 폭발적 성장, 4개사 합산 월평균 매출 <b class="pos"><span class="pos">+24.8%</span></b>·영업이익 <b class="pos"><span class="pos">+74.1%</span></b></div>
-          <div class="report-subhead">월평균 기준 (26.1Q = 분기합계 ÷ 3)</div>
+          <div class="report-headline">26년 1분기: <b class="pos">넥슨</b>·<b class="pos">크래프톤</b>이 폭발적 성장, 4개사 합산 월평균 매출 <b class="pos"><span class="pos">+24.8%</span></b>·영업이익 <b class="pos"><span class="pos">+74.1%</span></b></div>
         </div>
         <div class="report-arrow">▼</div>
       </div>
       <div class="report-body" onclick="event.stopPropagation();">
         <div class="report-evidence">
-          <div class="ev-card"><div class="ev-card-label">상위 4 합산 · 매출 증감</div><div class="ev-card-value"><span class="pos">+2,725억</span><span class="delta-pct">(+24.8%)</span></div><div class="ev-card-sub">25년 1조 990억 → 26.1Q 1조 3,715억</div></div>
-          <div class="ev-card"><div class="ev-card-label">상위 4 합산 · 영업이익 증감</div><div class="ev-card-value"><span class="pos">+1,679억</span><span class="delta-pct">(+74.1%)</span></div><div class="ev-card-sub">25년 2,266억 → 26.1Q 3,945억</div></div>
+          <div class="ev-card"><div class="ev-card-label">상위 4 합산 · 매출 증감</div><div class="ev-card-value"><span class="pos">+2,725억</span><span class="delta-pct">(+24.8%)</span></div><div class="ev-card-sub">25년 1조 990억 → 26년 1분기 1조 3,715억</div></div>
+          <div class="ev-card"><div class="ev-card-label">상위 4 합산 · 영업이익 증감</div><div class="ev-card-value"><span class="pos">+1,679억</span><span class="delta-pct">(+74.1%)</span></div><div class="ev-card-sub">25년 2,266억 → 26년 1분기 3,945억</div></div>
         </div>
+        <div class="report-bullet">
+          <b>넥슨</b>은 메이플 IP와 아크 레이더스 호조로 월평균 매출 <span class="pos"><span class="pos">+25.9%</span></span>·영업이익 <span class="pos"><span class="pos">+84.0%</span></span> 성장. <b>크래프톤</b>은 PUBG IP 흥행으로 매출 <span class="pos"><span class="pos">+64.9%</span></span>·영업이익 <span class="pos"><span class="pos">+113.0%</span></span>. 반면 <b>넷마블</b>은 전년 동분기 대비 매출 <span class="neg-text"><span class="neg">-8.1%</span></span>·영업이익 <span class="neg-text"><span class="neg">-39.7%</span></span> 감소.
+        </div>
+        <div class="report-chart-box"><canvas id="report-chart-top4" height="120"></canvas></div>
         <table class="report-mini-tbl">
       <thead><tr>
         <th>회사</th>
@@ -353,29 +355,24 @@ td{padding:4px 7px;border-bottom:1px solid #f1f5f9;color:var(--sub);}
       <td class="neg">-20.6%</td>
     </tr></tbody>
     </table>
-        <div class="report-bullet">
-          <b>넥슨</b>은 던파 모바일·메이플스토리 IP 글로벌 호조로 월평균 매출 <span class="pos"><span class="pos">+25.9%</span></span>·영업이익 <span class="pos"><span class="pos">+84.0%</span></span> 성장. <b>크래프톤</b>은 PUBG 모바일·콘솔 및 서브노티카 2 흥행으로 매출 <span class="pos"><span class="pos">+64.9%</span></span>·영업이익 <span class="pos"><span class="pos">+113.0%</span></span>. 반면 <b>넷마블</b>(<span class="neg">-8.1%</span>/<span class="neg">-39.7%</span>)·<b>NHN</b>(<span class="pos">+6.7%</span>/<span class="neg">-20.6%</span>)은 전년 동분기 대비 상대적 부진.
-        </div>
-        <div class="report-chart-box"><canvas id="report-chart-top4" height="120"></canvas></div>
       </div>
     </div>
 
     <!-- 3. 나머지 24개사 — 25 → 26.1Q -->
-    <div class="report-section open" onclick="toggleReportSection(event,this)">
+    <div class="report-section" onclick="toggleReportSection(event,this)">
       <div class="report-head">
         <div class="report-num">3</div>
         <div class="report-head-text">
-          <div class="report-headline">나머지 24개사 26.1Q: <b class="pos">펄어비스</b>·<b class="pos">엔씨소프트</b>가 견인, 그 2개사 제외 22개사 영업이익은 <b class="neg"><span class="neg">-38.3%</span></b> 부진</div>
-          <div class="report-subhead">붉은사막·아이온2 등 신작 효과 vs 라이브 게임 의존 회사 부진</div>
+          <div class="report-headline">나머지 24개사 26년 1분기: <b class="pos">펄어비스</b>·<b class="pos">엔씨소프트</b>가 견인, 그 2개사 제외 22개사 영업이익은 <b class="neg"><span class="neg">-38.3%</span></b> 부진</div>
         </div>
         <div class="report-arrow">▼</div>
       </div>
       <div class="report-body" onclick="event.stopPropagation();">
         <div class="report-evidence">
-          <div class="ev-card"><div class="ev-card-label">24개사 합산 · 매출 증감</div><div class="ev-card-value"><span class="pos">+1,087억</span><span class="delta-pct">(+18.0%)</span></div><div class="ev-card-sub">25년 6,050억 → 26.1Q 7,137억</div></div>
-          <div class="ev-card"><div class="ev-card-label">24개사 합산 · 영업이익 증감</div><div class="ev-card-value"><span class="pos">+922억</span><span class="delta-pct">(+217.2%)</span></div><div class="ev-card-sub">25년 424억 → 26.1Q 1,346억</div></div>
-          <div class="ev-card"><div class="ev-card-label">펄어비스·엔씨 제외 <b>22개사 합산 영업이익</b></div><div class="ev-card-value"><span class="neg">-162억</span><span class="delta-pct">(-38.3%)</span></div><div class="ev-card-sub">25년 423억 → 26.1Q 261억</div></div>
-          <div class="ev-card"><div class="ev-card-label">펄어비스·엔씨 제외 <b>22개사 합산 매출</b></div><div class="ev-card-value"><span class="neg">-306억</span><span class="delta-pct">(-6.8%)</span></div><div class="ev-card-sub">25년 4,490억 → 26.1Q 4,184억</div></div>
+          <div class="ev-card"><div class="ev-card-label">24개사 합산 · 매출 증감</div><div class="ev-card-value"><span class="pos">+1,087억</span><span class="delta-pct">(+18.0%)</span></div><div class="ev-card-sub">25년 6,050억 → 26년 1분기 7,137억</div></div>
+          <div class="ev-card"><div class="ev-card-label">24개사 합산 · 영업이익 증감</div><div class="ev-card-value"><span class="pos">+922억</span><span class="delta-pct">(+217.2%)</span></div><div class="ev-card-sub">25년 424억 → 26년 1분기 1,346억</div></div>
+          <div class="ev-card"><div class="ev-card-label">펄어비스·엔씨 제외 <b>22개사 합산 영업이익</b></div><div class="ev-card-value"><span class="neg">-162억</span><span class="delta-pct">(-38.3%)</span></div><div class="ev-card-sub">25년 423억 → 26년 1분기 261억</div></div>
+          <div class="ev-card"><div class="ev-card-label">펄어비스·엔씨 제외 <b>22개사 합산 매출</b></div><div class="ev-card-value"><span class="neg">-306억</span><span class="delta-pct">(-6.8%)</span></div><div class="ev-card-sub">25년 4,490억 → 26년 1분기 4,184억</div></div>
         </div>
         <div class="report-bullet">
           <b>펄어비스</b>는 「붉은사막」 26.3 글로벌 출시(첫날 200만장, 26일 만에 500만장) 흥행으로 영업이익 <span class="pos">+5829.5%</span> 급증. <b>엔씨소프트</b>는 「아이온2」 매출 1,000억 돌파 및 글로벌 IP 협업(MS·소니)으로 영업이익 <span class="pos">+2718.7%</span> 회복.
@@ -383,6 +380,7 @@ td{padding:4px 7px;border-bottom:1px solid #f1f5f9;color:var(--sub);}
         <div class="report-bullet neg">
           그 외 <b>22개사</b>는 합산 월평균 영업이익 <span class="neg-text"><span class="neg">-162억</span> (-38.3%)</span>로 부진. 라이브 게임 의존 회사 다수와 마케팅비 증가, 신작 부재가 주요 원인.
         </div>
+        <div class="report-chart-box"><canvas id="report-chart-rest24" height="120"></canvas></div>
         <table class="report-mini-tbl">
       <thead><tr>
         <th>회사</th>
@@ -583,7 +581,6 @@ td{padding:4px 7px;border-bottom:1px solid #f1f5f9;color:var(--sub);}
       <td class="neg">-157.6%</td>
     </tr></tbody>
     </table>
-        <div class="report-chart-box"><canvas id="report-chart-rest24" height="120"></canvas></div>
       </div>
     </div>
 
