@@ -308,13 +308,14 @@ td{padding:4px 7px;border-bottom:1px solid #f1f5f9;color:var(--sub);}
       </div>
       <div class="report-body" onclick="event.stopPropagation();">
         <div class="report-evidence">
-          <div class="ev-card"><div class="ev-card-label">상위 4 합산 · 매출 증감</div><div class="ev-card-value"><span class="pos">+2,725억</span><span class="delta-pct">(+24.8%)</span></div><div class="ev-card-sub">25년 1조 990억 → 26년 1분기 1조 3,715억</div></div>
-          <div class="ev-card"><div class="ev-card-label">상위 4 합산 · 영업이익 증감</div><div class="ev-card-value"><span class="pos">+1,679억</span><span class="delta-pct">(+74.1%)</span></div><div class="ev-card-sub">25년 2,266억 → 26년 1분기 3,945억</div></div>
+          <div class="ev-card"><div class="ev-card-label">상위 4개사 · <b>월평균 매출</b> 증감 (4개사 합산)</div><div class="ev-card-value"><span class="pos">+2,725억</span><span class="delta-pct">(+24.8%)</span></div><div class="ev-card-sub">25년 1조 990억 → 26년 1분기 1조 3,715억 (월평균)</div></div>
+          <div class="ev-card"><div class="ev-card-label">상위 4개사 · <b>월평균 영업이익</b> 증감 (4개사 합산)</div><div class="ev-card-value"><span class="pos">+1,679억</span><span class="delta-pct">(+74.1%)</span></div><div class="ev-card-sub">25년 2,266억 → 26년 1분기 3,945억 (월평균)</div></div>
         </div>
         <div class="report-bullet">
           <b>넥슨</b>은 메이플 IP와 아크 레이더스 호조로 월평균 매출 <span class="pos"><span class="pos">+25.9%</span></span>·영업이익 <span class="pos"><span class="pos">+84.0%</span></span> 성장. <b>크래프톤</b>은 PUBG IP 흥행으로 매출 <span class="pos"><span class="pos">+64.9%</span></span>·영업이익 <span class="pos"><span class="pos">+113.0%</span></span>. 반면 <b>넷마블</b>은 전년 동분기 대비 매출 <span class="neg-text"><span class="neg">-8.1%</span></span>·영업이익 <span class="neg-text"><span class="neg">-39.7%</span></span> 감소.
         </div>
-        <div class="report-chart-box"><canvas id="report-chart-top4" height="120"></canvas></div>
+        <div class="report-chart-box"><canvas id="report-chart-top4-rev" height="120"></canvas></div>
+        <div class="report-chart-box"><canvas id="report-chart-top4-oi" height="120"></canvas></div>
         <table class="report-mini-tbl">
       <thead><tr>
         <th>회사</th>
@@ -369,10 +370,10 @@ td{padding:4px 7px;border-bottom:1px solid #f1f5f9;color:var(--sub);}
       </div>
       <div class="report-body" onclick="event.stopPropagation();">
         <div class="report-evidence">
-          <div class="ev-card"><div class="ev-card-label">24개사 합산 · 매출 증감</div><div class="ev-card-value"><span class="pos">+1,087억</span><span class="delta-pct">(+18.0%)</span></div><div class="ev-card-sub">25년 6,050억 → 26년 1분기 7,137억</div></div>
-          <div class="ev-card"><div class="ev-card-label">24개사 합산 · 영업이익 증감</div><div class="ev-card-value"><span class="pos">+922억</span><span class="delta-pct">(+217.2%)</span></div><div class="ev-card-sub">25년 424억 → 26년 1분기 1,346억</div></div>
-          <div class="ev-card"><div class="ev-card-label">펄어비스·엔씨 제외 <b>22개사 합산 영업이익</b></div><div class="ev-card-value"><span class="neg">-162억</span><span class="delta-pct">(-38.3%)</span></div><div class="ev-card-sub">25년 423억 → 26년 1분기 261억</div></div>
-          <div class="ev-card"><div class="ev-card-label">펄어비스·엔씨 제외 <b>22개사 합산 매출</b></div><div class="ev-card-value"><span class="neg">-306억</span><span class="delta-pct">(-6.8%)</span></div><div class="ev-card-sub">25년 4,490억 → 26년 1분기 4,184억</div></div>
+          <div class="ev-card"><div class="ev-card-label">나머지 24개사 · <b>월평균 매출</b> 증감 (24개사 합산)</div><div class="ev-card-value"><span class="pos">+1,087억</span><span class="delta-pct">(+18.0%)</span></div><div class="ev-card-sub">25년 6,050억 → 26년 1분기 7,137억 (월평균)</div></div>
+          <div class="ev-card"><div class="ev-card-label">나머지 24개사 · <b>월평균 영업이익</b> 증감 (24개사 합산)</div><div class="ev-card-value"><span class="pos">+922억</span><span class="delta-pct">(+217.2%)</span></div><div class="ev-card-sub">25년 424억 → 26년 1분기 1,346억 (월평균)</div></div>
+          <div class="ev-card"><div class="ev-card-label">펄어비스·엔씨 제외 22개사 · <b>월평균 매출</b> 증감 (22개사 합산)</div><div class="ev-card-value"><span class="neg">-306억</span><span class="delta-pct">(-6.8%)</span></div><div class="ev-card-sub">25년 4,490억 → 26년 1분기 4,184억 (월평균)</div></div>
+          <div class="ev-card"><div class="ev-card-label">펄어비스·엔씨 제외 22개사 · <b>월평균 영업이익</b> 증감 (22개사 합산)</div><div class="ev-card-value"><span class="neg">-162억</span><span class="delta-pct">(-38.3%)</span></div><div class="ev-card-sub">25년 423억 → 26년 1분기 261억 (월평균)</div></div>
         </div>
         <div class="report-bullet">
           <b>펄어비스</b>는 「붉은사막」 26.3 글로벌 출시(첫날 200만장, 26일 만에 500만장) 흥행으로 영업이익 <span class="pos">+5829.5%</span> 급증. <b>엔씨소프트</b>는 「아이온2」 매출 1,000억 돌파 및 글로벌 IP 협업(MS·소니)으로 영업이익 <span class="pos">+2718.7%</span> 회복.
@@ -380,7 +381,8 @@ td{padding:4px 7px;border-bottom:1px solid #f1f5f9;color:var(--sub);}
         <div class="report-bullet neg">
           그 외 <b>22개사</b>는 합산 월평균 영업이익 <span class="neg-text"><span class="neg">-162억</span> (-38.3%)</span>로 부진. 라이브 게임 의존 회사 다수와 마케팅비 증가, 신작 부재가 주요 원인.
         </div>
-        <div class="report-chart-box"><canvas id="report-chart-rest24" height="120"></canvas></div>
+        <div class="report-chart-box"><canvas id="report-chart-rest24-rev" height="120"></canvas></div>
+        <div class="report-chart-box"><canvas id="report-chart-rest24-oi" height="120"></canvas></div>
         <table class="report-mini-tbl">
       <thead><tr>
         <th>회사</th>
@@ -12068,50 +12070,57 @@ function drawReportCharts() {
     });
   }
 
-  // 2. 상위 4개사 5분기 매출/영업이익 (넥슨, 크래프톤 강조)
-  const c1 = document.getElementById('report-chart-top4');
-  if (c1) {
-    if (c1._chart) c1._chart.destroy();
-    const colors = {'넥슨':'#1d4ed8','크래프톤':'#2563eb','넷마블':'#ef4444','NHN':'#f59e0b'};
-    c1._chart = new Chart(c1, {
+  // 2번 섹션 — 상위 4개사 5분기 (매출 + 영업이익 각각)
+  const colors4 = {'넥슨':'#1d4ed8','크래프톤':'#2563eb','넷마블':'#ef4444','NHN':'#f59e0b'};
+  function top4Chart(canvasId, field, fieldLabel) {
+    const el = document.getElementById(canvasId);
+    if (!el) return;
+    if (el._chart) el._chart.destroy();
+    el._chart = new Chart(el, {
       type:'line',
       data:{labels:last5Labels,
         datasets:['넥슨','크래프톤','넷마블','NHN'].map(co => ({
-          label:co+' 매출(억)',
-          data:slice(CD.companies[co]?.rev),
-          borderColor:colors[co],backgroundColor:colors[co]+'22',
+          label:co+' '+fieldLabel+'(억)',
+          data:slice(CD.companies[co]?.[field]),
+          borderColor:colors4[co],backgroundColor:colors4[co]+'22',
           borderWidth:co==='넥슨'||co==='크래프톤'?3:2,
           pointRadius:3,tension:.25,
         }))},
-      options:{responsive:true,plugins:{title:{display:true,text:'상위 4개사 — 최근 5개 분기 매출 추이'},legend:{position:'bottom'}},scales:{y:{ticks:{callback:v=>v>=10000?(v/10000).toFixed(1)+'조':v.toLocaleString()+'억'}}}}
+      options:{responsive:true,plugins:{title:{display:true,text:'상위 4개사 — 최근 5개 분기 '+fieldLabel+' 추이'},legend:{position:'bottom'}},scales:{y:{ticks:{callback:v=>Math.abs(v)>=10000?(v/10000).toFixed(1)+'조':v.toLocaleString()+'억'}}}}
     });
   }
+  top4Chart('report-chart-top4-rev', 'rev', '매출');
+  top4Chart('report-chart-top4-oi', 'oi', '영업이익');
 
-  // 3. 나머지 24 — 펄어비스/엔씨 강조 + 22개사 합산 영업이익
-  const c2 = document.getElementById('report-chart-rest24');
-  if (c2) {
-    if (c2._chart) c2._chart.destroy();
-    // 22개사 합산 영업이익 (펄어비스/엔씨 제외)
-    const REST22_LIST = ["더블유게임즈","컴투스","위메이드","그라비티","카카오게임즈","네오위즈","데브시스터즈","시프트업","넥슨게임즈","웹젠","위메이드맥스","조이시티","위메이드플레이","넵튠","미투온","엠게임","액토즈소프트","모비릭스","한빛소프트","플레이위드","드래곤플라이","썸에이지"];
-    const sum22Oi = labels.map((_,i) => {
+  // 3번 섹션 — 나머지 24 (펄어비스·엔씨 vs 22개사 합산) 매출 + 영업이익
+  const REST22_LIST = ["더블유게임즈","컴투스","위메이드","그라비티","카카오게임즈","네오위즈","데브시스터즈","시프트업","넥슨게임즈","웹젠","위메이드맥스","조이시티","위메이드플레이","넵튠","미투온","엠게임","액토즈소프트","모비릭스","한빛소프트","플레이위드","드래곤플라이","썸에이지"];
+  function sum22Field(field) {
+    return labels.map((_,i) => {
       let s=0, ok=false;
       for (const co of REST22_LIST) {
-        const v = CD.companies[co]?.oi?.[i];
+        const v = CD.companies[co]?.[field]?.[i];
         if (v != null) { s+=v; ok=true; }
       }
       return ok ? s : null;
     });
-    c2._chart = new Chart(c2, {
+  }
+  function rest24Chart(canvasId, field, fieldLabel) {
+    const el = document.getElementById(canvasId);
+    if (!el) return;
+    if (el._chart) el._chart.destroy();
+    el._chart = new Chart(el, {
       type:'line',
       data:{labels:last5Labels,
         datasets:[
-          {label:'펄어비스 영업이익(억)',data:slice(CD.companies['펄어비스']?.oi),borderColor:'#2563eb',backgroundColor:'#2563eb22',borderWidth:3,pointRadius:3,tension:.25},
-          {label:'엔씨소프트 영업이익(억)',data:slice(CD.companies['엔씨소프트']?.oi),borderColor:'#10b981',backgroundColor:'#10b98122',borderWidth:3,pointRadius:3,tension:.25},
-          {label:'나머지 22개사 합산 영업이익(억)',data:slice(sum22Oi),borderColor:'#dc2626',backgroundColor:'#dc262622',borderWidth:2,borderDash:[5,3],pointRadius:3,tension:.25},
+          {label:'펄어비스 '+fieldLabel+'(억)',data:slice(CD.companies['펄어비스']?.[field]),borderColor:'#2563eb',backgroundColor:'#2563eb22',borderWidth:3,pointRadius:3,tension:.25},
+          {label:'엔씨소프트 '+fieldLabel+'(억)',data:slice(CD.companies['엔씨소프트']?.[field]),borderColor:'#10b981',backgroundColor:'#10b98122',borderWidth:3,pointRadius:3,tension:.25},
+          {label:'나머지 22개사 합산 '+fieldLabel+'(억)',data:slice(sum22Field(field)),borderColor:'#dc2626',backgroundColor:'#dc262622',borderWidth:2,borderDash:[5,3],pointRadius:3,tension:.25},
         ]},
-      options:{responsive:true,plugins:{title:{display:true,text:'나머지 24개사 — 최근 5개 분기 영업이익 (펄어비스·엔씨 vs 그 외 22개사 합산)'},legend:{position:'bottom'}},scales:{y:{ticks:{callback:v=>v.toLocaleString()+'억'}}}}
+      options:{responsive:true,plugins:{title:{display:true,text:'나머지 24개사 — 최근 5개 분기 '+fieldLabel+' (펄어비스·엔씨 vs 그 외 22개사 합산)'},legend:{position:'bottom'}},scales:{y:{ticks:{callback:v=>Math.abs(v)>=10000?(v/10000).toFixed(1)+'조':v.toLocaleString()+'억'}}}}
     });
   }
+  rest24Chart('report-chart-rest24-rev', 'rev', '매출');
+  rest24Chart('report-chart-rest24-oi', 'oi', '영업이익');
 }
 
 // 필터링
